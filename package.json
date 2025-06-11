@@ -33,6 +33,9 @@
     "scss": "^0.2.4",
     "web-vitals": "^2.1.4"
   },
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
