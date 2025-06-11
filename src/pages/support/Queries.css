@@ -1,0 +1,86 @@
+.table-container {
+    padding: 20px;
+  }
+  
+  .styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  .styled-table th,
+  .styled-table td {
+    /* border: 1px solid #ddd; */
+    padding: 30px;
+    text-align: left;
+  }
+  
+  .styled-table th {
+    /* background-color: #f8f9fa; */
+  }
+  
+  .status {
+    background-color: gold;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .view-btn {
+    background-color: lightblue;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  .expand-btn {
+    display: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1400px) {
+    .hide-on-small {
+      display: none;
+    }
+  
+    .expand-btn {
+      display: inline-block;
+    }
+  }
+  
+  .expand-row {
+    background-color: #f1f1f1;
+  }
+  
+
+  .icon-btn {
+    background: #dbeafe;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .expanded-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+    background: #f8f9fa;
+  }
+  
+  .expanded-column {
+    width: 50%;
+  }
+  
+  .expanded-column p {
+    margin: 5px 0;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  

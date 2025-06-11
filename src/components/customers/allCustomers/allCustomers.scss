@@ -1,0 +1,173 @@
+.AllCustomers {
+    padding: .5cm;
+    border: 1px solid black;
+    width: 100%;
+}
+
+.allCustomersBox {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: .5cm;
+    border-radius: 5px;
+}
+
+.allCustomersHead {
+    font-size: 18px;
+    font-weight: 600;
+    opacity: .7;
+}
+
+.allCustomersButtonBox {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: .3cm;
+    // border: 1px solid black;
+}
+
+.allCustomersButton {
+    padding: .3cm .6cm;
+    font-size: 16px;
+    border-radius: 25px;
+    color: white;
+    background-color: rgba(137, 43, 226, 0.836);
+}
+
+.allCustomersLowerBox {
+    margin-top: 1cm;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+}
+
+.allCustomersLowerHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: .5cm;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.lower-menu {
+    display: flex;
+    align-items: center;
+    gap: .5cm;
+}
+
+.allCustomersLower {
+    padding: .5cm;
+}
+
+.bulkButton {
+    display: flex;
+    align-items: center;
+    gap: .2cm;
+}
+
+.bulkButtonBox {
+    padding: .2cm .5cm;
+    border-radius: 5px;
+    border: 1px solid rgb(221, 221, 221);
+}
+
+.lucide-chevron-down {
+    color: grey;
+    margin-top: .1cm;
+    display: flex;
+    align-items: center;
+}
+
+.customersText {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.searchInput {
+    padding: .2cm .5cm;
+    background-color: transparent;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+    opacity: .7;
+    font-size: 14px;
+}
+
+td {
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.badge {
+    background-color: #ffcc00;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.badgeVerified {
+    background-color: forestgreen;
+    color: white;
+}
+
+.action {
+    background-color: rgb(218, 218, 255);
+    width: fit-content;
+    padding: .2cm;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: .2cm;
+}
+
+/* Responsive Design */
+
+
+@media (max-width:1300px) {
+    .vstath {
+        display: none;
+    }
+}
+
+@media (max-width:1000px) {
+    .vstath {
+        display: none;
+    }
+
+    .pstatH {
+        display: none;
+    }
+}
+
+
+@media (max-width:600px) {
+    .ehead {
+        display: none;
+    }
+}

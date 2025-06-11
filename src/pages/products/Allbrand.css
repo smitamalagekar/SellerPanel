@@ -1,0 +1,198 @@
+ 
+
+
+
+  .ma10 {
+    margin-top: 1cm;
+}
+
+.preOrderFaqLeft {
+    padding: 0.5cm;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.preOrderLeftUpper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0.5cm 0;
+}
+
+.allFaq {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.searchFaq {
+    background-color: transparent;
+    padding: 0.15cm 0.3cm;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 5px;
+}
+
+.preOrderFaqRight {
+    width: 20cm;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+}
+
+/* .preOrderFaqBox {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.3cm;
+    padding: 0.5cm;
+} */
+
+/* Form Heading */
+.preOrderFaqRightHead {
+    padding: 0.5cm;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+/* Form */
+.faqForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3cm;
+    padding: 0.5cm;
+}
+
+.faqInp,
+.faqTxt {
+    padding: 0.3cm;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+.faqTxt {
+    min-height: 4cm;
+}
+.PreOrderFaq {
+    width: 100%;
+
+
+}
+
+
+
+
+
+.inpSub {
+    background-color: royalblue;
+    color: white;
+    padding: 0.2cm 0.5cm;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inpSubBox {
+    display: flex;
+    margin-top: 0.2cm;
+    justify-content: flex-end;
+}
+
+.faqTable {
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 10px;
+}
+
+
+@media (max-width: 1024px) {
+    .preOrderFaqBox {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .preOrderFaqRight {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .preOrderFaqBox {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5cm;
+    }
+
+    .preOrderFaqLeft,
+    .preOrderFaqRight {
+        width: 100%;
+    }
+
+    .preOrderFaqLeft {
+        order: 1;
+    }
+
+    .preOrderFaqRight {
+        order: 2;
+    }
+
+    .preOrderLeftUpper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3cm;
+    }
+
+    .searchFaq {
+        width: 100%;
+    }
+    .preOrderFaqLeft,
+    .preOrderFaqRight {
+        width: 100%;
+    }
+    
+}
+
+
+@media (max-width: 480px) {
+    .allFaq {
+        font-size: 16px;
+    }
+
+    .searchFaq {
+        font-size: 14px;
+        padding: 0.1cm 0.2cm;
+    }
+
+    .faqInp,
+    .faqTxt {
+        font-size: 14px;
+    }
+
+    .inpSub {
+        font-size: 14px;
+        padding: 0.15cm 0.4cm;
+    }
+    .preOrderFaqLeft,
+    .preOrderFaqRight {
+        width: 100%;
+    }
+}
+@media (max-width: 794px) {
+    .preOrderFaqBox {
+        display: flex;
+        flex-direction: column; 
+        align-items: stretch; 
+    }
+
+    .preOrderFaqLeft,
+    .preOrderFaqRight {
+        width: 100%;
+    }
+
+    .preOrderFaqLeft {
+        order: 1;
+    }
+
+    .preOrderFaqRight {
+        order: 2; 
+    }
+}
+
+
+

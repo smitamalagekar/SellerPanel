@@ -1,0 +1,779 @@
+.container2 {
+    display: flex !important;
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start ;
+  }
+  
+  
+  /* Left Side Form */
+  .form-container-general {
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+    background: white;
+    padding: 20px;
+    padding: 1.5cm;
+    border-radius: 10px;
+  }
+  
+  .form-container-general h2, h3 {
+    margin-bottom: 15px;
+    color: black;
+    font-weight: bold;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .form-group-gen {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .form-group-brand {
+    
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .form-group-brand select {
+    flex: 1;
+    padding: 10px;  /* Increases inner space inside the dropdown */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px; /* Adjust text size if needed */
+  }
+  
+  
+  label {
+    width: 180px;
+    text-align: left;
+  }
+  
+  input, select {
+    flex: 1;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Right Side Category Table */
+  .category-container {
+    width: 320px;
+    background: white;
+    
+  }
+  
+  .category-list {
+    max-height: 350px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+    background: none;
+  }
+  
+  .sub-category {
+    margin-left: 15px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 5px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .category-container {
+      width: 100%;
+    }
+  }
+
+  /* Full Width Section */
+.full-width-section {
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Description Box */
+.description-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+
+.description-container label {
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.expandable-textarea {
+    width: 63%;
+    margin-left: 5cm;
+    min-height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    resize: vertical; /* Allows expansion */
+    transition: border 0.3s ease;
+}
+
+.expandable-textarea:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .full-width-section {
+        padding: 15px;
+    }
+
+    .toggle-group {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .toggle-switch {
+        width: 35px;
+        height: 18px;
+    }
+
+    .toggle-switch::before {
+        width: 16px;
+        height: 16px;
+    }
+
+    .toggle-switch:checked::before {
+        transform: translateX(17px);
+    }
+}
+
+.section span{
+    color: #8c8585;
+    font-weight:normal ;
+}
+
+/* Section Titles */
+.section h3 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Toggle Group */
+.toggle-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Toggle Switch Styling */
+.custom-toggle {
+    display: none; /* Hide default checkbox */
+}
+
+.toggle-label {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background: #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.toggle-label::before {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    top: 1px;
+    left: 2px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* When Toggle is Checked */
+.custom-toggle:checked + .toggle-label {
+    background: #28a745;
+}
+
+.custom-toggle:checked + .toggle-label::before {
+    transform: translateX(20px);
+}
+
+/* Description Text */
+.toggle-group p {
+    font-size: 12px;
+    color: #666;
+    margin-left: 5px;
+}
+
+/* Refund Note Section */
+.refund-note {
+    margin-top: 10px;
+}
+
+.refund-note label {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.refund-note-box {
+    width: 100%;
+    padding: 10px;
+    border: 1px dashed #ccc;
+    text-align: center;
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.refund-note-box:hover {
+    background: #f8f9fa;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .product-settings-container {
+        padding: 15px;
+    }
+
+    .toggle-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-label {
+        width: 35px;
+        height: 18px;
+    }
+
+    .toggle-label::before {
+        width: 16px;
+        height: 16px;
+    }
+
+    .custom-toggle:checked + .toggle-label::before {
+        transform: translateX(17px);
+    }
+}
+/* Flash Deal Container */
+.flash-deal-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.flash-deal-container h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.flash-deal-container h3 span {
+    font-size: 14px;
+    font-weight: normal;
+    color: #666;
+}
+
+/* Input Group */
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Labels */
+.input-group label {
+    font-size: 14px;
+    font-weight: normal;
+    flex: 1;
+}
+
+/* Inputs and Dropdowns */
+.input-group input,
+.input-group select {
+    width: 70%;
+    padding: 10px;
+    color: #8c8585;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .flash-deal-container {
+        padding: 15px;
+    }
+
+    .input-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-group label {
+        margin-bottom: 5px;
+    }
+
+    .input-group input,
+    .input-group select {
+        width: 100%;
+    }
+}
+/* VAT & TAX Container */
+.vat-tax-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.vat-tax-container h3 {
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+/* Row for Tax & Vat (Single Line) */
+.vat-tax-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Labels */
+.vat-tax-row label {
+    font-size: 14px;
+    /* font-weight: 500; */
+    min-width: 50px;
+}
+
+/* Input & Dropdown */
+.vat-tax-row input,
+.vat-tax-row select {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .vat-tax-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .vat-tax-row input,
+    .vat-tax-row select {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+/* Heading */
+.heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Divider Line */
+.divider {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+/* Each Row (Tax & Vat) */
+.row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Label */
+.label {
+    font-size: 14px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Input & Dropdown Wrapper */
+.input-group-Dropdown {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Input Field */
+.input {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+/* Dropdown */
+.row-drop{
+    width: 100%;
+}
+.dropdown {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    cursor: pointer;
+    
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .input-group-Dropdown {
+        flex-direction: column;
+    }
+
+    .input,
+    .dropdown {
+        width: 100%;
+    }
+}
+
+/* button */
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .btn-gray {
+    background: #e0e0e0;
+    color: #333;
+    font-weight: bold ;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-gray:hover {
+    background: #d6d6d6;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn-green {
+    background: #28a745;
+    color: white;
+    border: 1px solid rgb(152, 218, 152);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 8px rgba(77, 200, 84, 0.859);
+  }
+  /* Main Editor Container */
+.editor-container {
+    width: 100%;
+    max-width: 650px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Label */
+.editor-label {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Toolbar */
+.toolbar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #f8f8f8;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Toolbar Buttons */
+.toolbar button {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.toolbar button:hover {
+    background: #eaeaea;
+}
+
+/* Editable Text Area */
+.editor {
+    min-height: 150px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    outline: none;
+    border-radius: 0 0 5px 5px;
+    background: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .toolbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.edit{
+    width: 100%;
+}
+
+.refund{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .form-container-general {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .category-container {
+        width: 100%;
+    }
+
+    .expandable-textarea {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .toggle-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-group,
+    .vat-tax-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .input-group input,
+    .input-group select,
+    .vat-tax-row input,
+    .vat-tax-row select {
+        width: 100%;
+    }
+
+    .editor-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .refund {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .button-group {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .flash-deal-container,
+    .vat-tax-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .row-drop {
+        width: 100%;
+    }
+
+    .input-group-Dropdown {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .editor {
+        min-height: 120px;
+    }
+
+    .toolbar {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .toggle-label {
+        width: 35px;
+        height: 18px;
+    }
+
+    .toggle-label::before {
+        width: 16px;
+        height: 16px;
+    }
+
+    .custom-toggle:checked + .toggle-label::before {
+        transform: translateX(17px);
+    }
+}
+
+/* ... (आपके मौजूदा CSS) ... */
+
+/* ... (आपके मौजूदा CSS) ... */
+
+.category-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 5px;
+    padding: 0;
+  }
+  
+  /* ... (अन्य CSS) ... */
+
+.category-container {
+    width: 330px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgb(213, 211, 211);
+    /* height: 900px; */
+    
+  }
+  
+  .category-list {
+    max-height: 350px;
+    overflow-y: auto;
+    /* border: 1px solid #ddd; */
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+  }
+  .pro3{
+    margin-top: 100px !important;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+  
+  .sub-category {
+    margin-left: 20px;
+  }
+  
+  .sub-sub-category {
+    margin-left: 40px;
+  }
+  
+  .expand-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .category-container {
+      width: 100%;
+    }
+  }
+  hr{
+    
+    color: #110f0f !important;
+   
+ }

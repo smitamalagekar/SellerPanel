@@ -1,0 +1,56 @@
+.nimg {
+    width: 1cm;
+}
+
+.PreOrderNotification {
+    padding: .5cm;
+}
+
+.preOrderNotificationBox {
+    border: 1px solid rgb(214, 214, 214);
+    border-radius: 10px;
+}
+
+.preOrderNotificationBoxHeader {
+    padding: .5cm .5cm 1cm .5cm;
+}
+
+.notificationTypes {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.notMItem {
+    padding: .15cm .5cm;
+    border: 1px dotted rgb(155, 155, 155);
+    width: fit-content;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    opacity: .6;
+    font-size: 14px;
+}
+
+.activeNot {
+    color: rgb(0, 0, 255);
+    background-color: rgb(213, 213, 255);
+}
+
+.notificationMenu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: .3cm;
+
+}
+
+.notMLeft {
+    display: flex;
+    align-items: center;
+    gap: .5cm;
+}
+
+.preOrderNotificationLower {
+    padding: 0cm .5cm .5cm;
+}
+

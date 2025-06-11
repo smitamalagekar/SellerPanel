@@ -1,0 +1,89 @@
+.ma10 {
+    margin-top: 1cm;
+}
+
+.preOrderFaqLeft {
+    padding: .5cm;
+    // flex-shrink: 0;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.preOrderLeftUpper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0cm 0cm .5cm 0cm;
+
+}
+
+.allFaq {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.searchFaq {
+    background-color: transparent;
+    padding: .15cm .3cm;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 5px;
+}
+
+.preOrderFaqRight {
+    width: 20cm;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+}
+
+.preOrderFaqBox {
+    display: flex;
+    align-items: flex-start;
+
+    gap: .3cm;
+    // border: 1px solid black;
+    padding: .5cm;
+}
+
+.preOrderFaqRightHead {
+    padding: .5cm;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+.faqForm {
+    display: flex;
+    flex-direction: column;
+    gap: .3cm;
+    padding: .5cm;
+}
+
+.faqInp,
+.faqTxt {
+    padding: .3cm;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+.faqTxt {
+    min-height: 4cm;
+}
+
+.inpSub {
+    background-color: royalblue;
+    color: white;
+    padding: .2cm .5cm;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inpSubBox {
+    display: flex;
+    margin-top: .2cm;
+    justify-content: flex-end;
+}
+
+.faqTable {
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 10px;
+}

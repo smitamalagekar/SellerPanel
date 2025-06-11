@@ -1,0 +1,64 @@
+.permissions-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+
+/* Each Permission Box */
+.permission-box {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Toggle Button Styling */
+.toggle-switch {
+    margin-left: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .permissions-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .permissions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .permissions-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Save Button Styling */
+.save-btn1 {
+    text-align: right;
+}
+
+.save-button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.save-button:hover {
+    background-color: #2980b9;
+}

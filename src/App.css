@@ -1,0 +1,13 @@
+*{
+  font-family: 'Inter', 'sans-serif'
+}
+/* Add this to your CSS file */
+.sidebar ul {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.sidebar ul.open {
+  max-height: 500px; /* Adjust based on your content */
+}

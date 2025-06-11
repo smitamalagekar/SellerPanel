@@ -1,0 +1,236 @@
+.preOrderDashboardCard {
+    padding: 1cm;
+    border: 2px solid black;
+    // width: fit-content;
+    // width: 8cm;
+    border-radius: 10px;
+}
+
+.dashHead {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .7;
+}
+
+.dashSub {
+    font-size: 13px;
+    font-weight: 600;
+    opacity: .5;
+}
+
+.dashNum {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: .3cm;
+}
+
+.view-all-button {
+    display: flex;
+    align-items: center;
+    gap: .3cm;
+    margin-top: .3cm;
+}
+
+.PreOrderDashboardBox {
+    padding: .5cm;
+}
+
+.yellowBorder {
+    border: 2px solid #F8AE7E;
+}
+
+.yellowBack {
+    background-color: #ffe4d3;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.preOrderDashboardFirst {
+    display: grid;
+    gap: .5cm;
+    grid-template-columns: repeat(auto-fit, minmax(7cm, auto));
+}
+
+.deBox {
+    display: flex;
+    flex-direction: column;
+    // gap: .1cm;
+}
+
+.detext {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.grayBorder {
+    border: 1px solid rgb(211, 211, 211);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.addNewProduct {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.salesStatsRight {
+    width: 5cm;
+}
+
+.salesStatsBox {
+    display: flex;
+    align-items: flex-start;
+    gap: 1cm;
+    padding: .5cm;
+    border-radius: 10px;
+    // width: fit-content;
+    border: 1px solid rgb(211, 211, 211);
+    // height: fit-content;
+}
+
+.preOrderDashboardStats {
+    margin-top: 1cm;
+}
+
+.salesStatsHead {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.saleStatsSub {
+    font-weight: 600;
+    opacity: .5;
+    font-size: 14px;
+
+}
+
+.leftOneBox {
+    padding: .5cm 1.5cm .5cm .5cm;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.salesText {
+    font-size: 15px;
+}
+
+.salesDollar {
+    font-weight: 600;
+    margin-top: .2cm;
+    font-size: 18px;
+}
+
+.salesStatsRight {
+    width: 7cm;
+    border: 1px solid black;
+    height: 2cm;
+}
+
+.preorderStatesHead {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.preOrderStatesSub {
+    font-size: 14px;
+    font-weight: 600;
+    opacity: .5;
+}
+
+.preOrderSalesStats {
+    padding: .5cm;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1cm;
+    border: 2px solid #F8AE7E;
+    width: fit-content;
+    border-radius: 10px;
+
+}
+
+.preOrderDashboardStats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .3cm;
+    grid-template-rows: 1fr 1fr;
+}
+
+.preOrderRequests {
+    padding: .2cm .5cm;
+
+    border-radius: 5px;
+}
+
+.backGrayWhite {
+    background-color: rgb(233, 233, 233);
+}
+
+.preOrderRequestsHead {
+    font-weight: 600;
+}
+
+.preOrderReqNum {
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: .2cm;
+}
+
+.preOrderSalesRight {
+    display: flex;
+    flex-direction: column;
+    gap: .3cm;
+}
+
+.oshead {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ostext {
+    font-size: 14px;
+}
+
+.inShip {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.orderStatusBoxLower {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1cm;
+    gap: 1cm;
+}
+
+.orsbls {
+    // width: fit-content;
+    padding: .3cm 1cm;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+}
+
+.noBack {
+    background-color: transparent;
+}
+
+.orderStatusBox {
+    padding: .5cm;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 10px;
+    // height: fit-content;
+}
+
+.rowspan2 {
+    grid-row: span 2;
+}
+
+.pnamepre {
+    display: inline-block;
+    width: 13cm;
+    /* Approx. 10 cm (1cm ≈ 37.8px on a standard screen) */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

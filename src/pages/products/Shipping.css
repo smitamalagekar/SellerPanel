@@ -1,0 +1,176 @@
+.shipping-container {
+    /* width: 100%; */
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .shipping-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+  }
+  
+  .shipping-divider {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  .shipping-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .shipping-option span {
+    font-size: 15px;
+    color: #333;
+  }
+  
+  /* Toggle Switch */
+  .toggle-switch {
+    position: relative;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .toggle-switch input {
+    display: none;
+  }
+  
+  .toggle-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .toggle-slider::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s;
+  }
+  
+  .toggle-switch input:checked + .toggle-slider {
+    background-color: #28a745;
+  }
+  
+  .toggle-switch input:checked + .toggle-slider::before {
+    transform: translateX(20px);
+  }
+  
+  /* Input Box */
+  /* Input Box - Matches the Image */
+.input-box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 900px;  /* Adjust width as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .shipping-input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .shipping-input:focus {
+    border: none;
+    outline: none;
+  }
+  
+  .days-text {
+    padding: 8px 12px;
+    background: #f9f9f9;
+    font-size: 14px;
+    color: #666;
+    border-left: 1px solid #ccc;
+  }
+  
+  
+  /* Buttons */
+  .button-group-ship {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 5px;
+  }
+  
+  .btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  
+  .btn-btn-grey {
+    background: #e0e0e0;
+    color: #333;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-right: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    margin-right: 10px;
+    padding: 6px;
+  }
+  
+  .btn-btn-green {
+    background: #28a745;
+    color: white;
+    border: 1px solid rgb(152, 218, 152);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 3px 3px 8px rgba(77, 200, 84, 0.859);
+      }
+
+  
+  @media (max-width: 768px) {
+    .shipping-container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .shipping-option {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .toggle-switch {
+      align-self: flex-end;
+    }
+  
+    .input-box {
+      width: 100%;
+    }
+  
+    .button-group-ship{
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .btn {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  

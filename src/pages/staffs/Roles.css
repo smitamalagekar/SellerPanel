@@ -1,0 +1,114 @@
+/* Container */
+.role-container {
+    width: 90%;
+    
+    margin: auto;
+    padding: 20px;
+  }
+  
+  /* Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .add-role-btn {
+    background-color: #4a90e2;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .add-role-btn:hover {
+    background-color: #357ab8;
+  }
+  
+  /* Table */
+  .role-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .role-table th, .role-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    padding: 30px;
+  }
+ 
+  .role-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  /* Options Header Centering */
+  .options-header {
+    text-align: center;
+  }
+  
+  /* Actions Column */
+  .actions {
+    display: flex;
+    justify-content: start;
+    gap: 15px;
+  }
+  
+  .edit-icon {
+    color: #2d89ef;
+    cursor: pointer;
+  }
+  
+  .delete-icon {
+    color: #e44d26;
+    cursor: pointer;
+  }
+  
+  /* 📱 Responsive Styles */
+  @media (max-width: 1200px) {
+    .role-container {
+      width: 95%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .role-table th, .role-table td {
+      padding: 10px;
+      font-size: 14px;
+    }
+  
+    .add-role-btn {
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .add-role-btn {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .role-table th, .role-table td {
+      font-size: 12px;
+    }
+  
+    .actions {
+      gap: 10px;
+    }
+  }
+  

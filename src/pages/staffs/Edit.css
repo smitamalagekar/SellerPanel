@@ -1,0 +1,126 @@
+/* .languages-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .language-button {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+  
+  .language-button:hover {
+    background-color: #f0f0f0;
+  }
+ */
+
+ .languages-section {
+    display: flex;
+    gap: 290px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    
+}
+
+.language-button {
+    position: relative;
+    padding: 8px 12px;
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s;
+    margin-left: 70px;
+}
+
+.language-button:hover {
+    color: black;
+}
+
+.language-button.active {
+    color: black;
+    font-weight: bold;
+}
+
+.language-button.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    background-color: blue;
+}
+
+  /* ... (बाकी CSS वैसा ही रहेगा) */
+
+
+
+  .permissions-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+}
+
+/* Each Permission Box */
+.permission-box {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Toggle Button Styling */
+.toggle-switch {
+    margin-left: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .permissions-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .permissions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .permissions-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Save Button Styling */
+.save-btn1 {
+    text-align: right;
+}
+
+.save-button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.save-button:hover {
+    background-color: #2980b9;
+}

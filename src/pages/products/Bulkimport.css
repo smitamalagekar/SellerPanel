@@ -1,0 +1,182 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    width: 100%;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-bottom: 15px;
+    text-align: left;
+    
+}
+
+.info-box {
+    background: #e0f0ff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+ol {
+    padding-left: 20px;
+    color: rgb(30, 49, 158);
+}
+
+.download-btn, .upload-btn {
+    background: #9164d5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    width: 200px;
+    text-align: center;
+    margin: 15px 0; /* Margin reset */
+    align-self: flex-start; /* Desktop ke liye left align */
+}
+
+.download-buttons-container {
+    display: flex;
+    gap: 10px; /* Buttons ke beech spacing */
+}
+
+.download-btn-btn {
+    background: #9164d5;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: center;
+    min-width: 150px;
+}
+
+.download-btn-btn:hover {
+    background: #7a4db5;
+}
+
+@media (max-width: 768px) {
+    .download-btn, .upload-btn {
+        width: 100%;
+        align-self: center; /* Mobile ke liye center align */
+    }
+}
+
+
+
+.download-btn:hover, .upload-btn:hover {
+    background: #7a4db5;
+}
+
+.upload-section {
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.file-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 95%;
+        padding: 15px;
+    }
+    .title {
+        font-size: 1.25rem;
+    }
+    /* .download-btn, .upload-btn {
+        width: 100%;
+    } */
+    .info-box {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        padding: 10px;
+    }
+    .title {
+        font-size: 1.1rem;
+    }
+    .info-box {
+        font-size: 0.85rem;
+    }
+}
+
+.file-upload-container {
+    width: 100%;
+    position: relative;
+}
+
+.file-upload-label {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: white;
+   
+    cursor: pointer;
+}
+
+.file-upload-text {
+    flex: 1;
+    font-size: 1rem;
+    color: #666;
+    padding-left: 10px;
+}
+
+.file-upload-button {
+    background: #e0e0e0;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    font-weight: bold;
+}
+
+.file-upload-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}

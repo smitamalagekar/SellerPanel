@@ -1,0 +1,704 @@
+/* .ma10 {
+    margin-top: 1cm;
+}
+
+.preOrderFaqLeft {
+    padding: .5cm;
+
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.preOrderLeftUpper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0cm 0cm .5cm 0cm;
+
+}
+
+.allFaq {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.searchFaq {
+    background-color: transparent;
+    padding: .15cm .3cm;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 5px;
+}
+
+.preOrderFaqRight-new{
+    width: 14cm;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+}
+ 
+.prerow {
+    display: flex;
+    flex-direction: column;
+    gap: 1cm;
+  
+   
+}
+
+.preOrderFaqBox {
+    display: flex;
+    align-items: flex-start;
+    gap: .3cm;
+   
+    padding: .5cm;
+}
+
+.preOrderFaqRightHead {
+    padding: .5cm;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+.faqForm {
+    display: flex;
+    flex-direction: column;
+    gap: .3cm;
+    padding: .5cm;
+}
+
+.faqInp,
+.faqTxt {
+    padding: .3cm;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+.faqTxt {
+    min-height: 4cm;
+}
+
+.inpSub {
+    background-color: royalblue;
+    color: white;
+    padding: .2cm .5cm;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inpSubBox {
+    display: flex;
+    margin-top: .2cm;
+    justify-content: flex-end;
+}
+
+.faqTable {
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 10px;
+} */
+
+
+
+/* ------------------- */
+/* 
+
+.ma10 {
+    margin-top: 1cm;
+}
+
+.preOrderFaqLeft {
+    padding: 0.5cm;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+.preOrderLeftUpper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0.5cm 0;
+}
+
+.allFaq {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.searchFaq {
+    background-color: transparent;
+    padding: 0.15cm 0.3cm;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 6cm;
+}
+
+
+.preOrderFaqRight-new {
+    width: 100%;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+}
+
+
+.preOrderFaqBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1cm;
+    padding: 0.5cm;
+}
+
+
+.prerow {
+    display: flex;
+    flex-direction: column; 
+    gap: 1cm;
+    width: 100%;
+}
+
+
+.preOrderFaqRightHead {
+    padding: 0.5cm;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+
+.faqForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3cm;
+    padding: 0.5cm;
+}
+
+
+.faqInp,
+.faqTxt {
+    padding: 0.3cm;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 206, 206);
+    width: 100%;
+}
+
+
+.faqTxt {
+    min-height: 4cm;
+}
+
+
+.inpSub {
+    background-color: royalblue;
+    color: white;
+    padding: 0.2cm 0.5cm;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.inpSubBox {
+    display: flex;
+    margin-top: 0.2cm;
+    justify-content: flex-end;
+}
+
+
+.faqTable {
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th,
+.table-container td {
+    padding: 0.3cm;
+    text-align: left;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+
+.actions {
+    display: flex;
+    gap: 0.3cm;
+}
+
+
+@media (min-width: 1200px) {
+    .preOrderFaqBox {
+        flex-direction: row; 
+    }
+
+    .preOrderFaqLeft {
+        width: 60%; 
+    }
+
+    .prerow {
+        width: 38%; 
+        flex-direction: column;
+    }
+
+    .preOrderFaqRight-new {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .preOrderFaqBox {
+        flex-direction: column; 
+    }
+
+    .preOrderFaqLeft,
+    .prerow {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .preOrderFaqBox {
+        padding: 0.3cm;
+    }
+
+    .prerow {
+        flex-direction: column;
+        gap: 1cm;
+    }
+
+    .preOrderFaqLeft,
+    .preOrderFaqRight-new {
+        width: 100%;
+    }
+
+    .faqTable {
+        overflow-x: auto;
+    }
+
+    .faqTable table {
+        width: 100%;
+        min-width: 600px;
+    }
+
+    .faqForm {
+        padding: 0.3cm;
+    }
+
+    .faqInp,
+    .faqTxt {
+        width: 100%;
+    }
+
+    .inpSubBox {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .preOrderFaqBox {
+        padding: 0.2cm;
+    }
+
+    .preOrderFaqLeft,
+    .preOrderFaqRight-new {
+        width: 100%;
+    }
+
+    .prerow {
+        gap: 0.5cm;
+    }
+
+    .faqTable table {
+        min-width: 100%;
+        font-size: 12px;
+    }
+
+    .allFaq {
+        font-size: 16px;
+    }
+
+    .faqForm {
+        padding: 0.2cm;
+    }
+
+    .searchFaq {
+        width: 100%;
+    }
+
+    .inpSub {
+        padding: 0.2cm 0.4cm;
+    }
+}
+
+
+@media (max-width: 390px) {
+    .preOrderFaqBox {
+        padding: 0.1cm;
+    }
+
+    .preOrderFaqLeft,
+    .preOrderFaqRight-new {
+        width: 100%;
+    }
+
+    .prerow {
+        gap: 0.3cm;
+    }
+
+    .faqTable table {
+        font-size: 11px;
+        min-width: 100%;
+    }
+
+    .allFaq {
+        font-size: 14px;
+    }
+
+    .faqForm {
+        padding: 0.1cm;
+    }
+
+    .searchFaq {
+        width: 100%;
+    }
+
+    .inpSub {
+        padding: 0.2cm 0.3cm;
+        font-size: 12px;
+    }
+} */
+
+
+
+
+.ma10 {
+    margin-top: 1cm;
+}
+
+
+.preOrderFaqLeft {
+    padding: 0.5cm;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    width: 100%;
+    order: -1; 
+}
+
+
+.preOrderLeftUpper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 0 0.5cm 0;
+}
+
+
+.allFaq {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.searchFaq {
+    background-color: transparent;
+    padding: 0.15cm 0.3cm;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 5px;
+    width: 100%;
+    max-width: 6cm;
+}
+
+
+.preOrderFaqRight-new {
+    width: 100%;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+}
+
+
+.preOrderFaqBox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1cm;
+    padding: 0.5cm;
+    flex-direction: row; 
+}
+
+
+.prerow {
+    display: flex;
+    flex-direction: column; 
+    gap: 1cm;
+    width: 100%;
+}
+
+
+.preOrderFaqRightHead {
+    padding: 0.5cm;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+
+.faqForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3cm;
+    padding: 0.5cm;
+}
+
+
+.faqInp,
+.faqTxt {
+    padding: 0.3cm;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 206, 206);
+    width: 100%;
+}
+
+
+.faqTxt {
+    min-height: 4cm;
+}
+
+
+.inpSub {
+    background-color: royalblue;
+    color: white;
+    padding: 0.2cm 0.5cm;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.inpSubBox {
+    display: flex;
+    margin-top: 0.2cm;
+    justify-content: flex-end;
+}
+
+.faqTable {
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+.table-container th,
+.table-container td {
+    padding: 0.3cm;
+    text-align: left;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+
+.actions {
+    display: flex;
+    gap: 0.3cm;
+}
+
+
+@media (min-width: 1200px) {
+    .preOrderFaqBox {
+        flex-direction: row;
+    }
+
+    .preOrderFaqLeft {
+        width: 60%;
+        order: -1; 
+    }
+
+    .prerow {
+        width: 38%;
+        flex-direction: column;
+    }
+
+    .preOrderFaqRight-new {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 794px) {
+    .preOrderFaqBox {
+        flex-direction: column; 
+    }
+
+    .preOrderFaqLeft {
+        width: 100%;
+        order: -1; 
+    }
+
+    .prerow {
+        width: 100%;
+        flex-direction: column;
+        gap: 1cm;
+    }
+
+    .preOrderFaqRight-new {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .preOrderFaqBox {
+        padding: 0.3cm;
+    }
+
+    .prerow {
+        flex-direction: column;
+        gap: 1cm;
+    }
+
+    .preOrderFaqLeft,
+    .preOrderFaqRight-new {
+        width: 100%;
+    }
+
+    .faqTable {
+        overflow-x: auto;
+    }
+
+    .faqTable table {
+        width: 100%;
+        min-width: 600px;
+    }
+
+    .faqForm {
+        padding: 0.3cm;
+    }
+
+    .faqInp,
+    .faqTxt {
+        width: 100%;
+    }
+
+    .inpSubBox {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .preOrderFaqBox {
+        padding: 0.2cm;
+    }
+
+    .preOrderFaqLeft,
+    .preOrderFaqRight-new {
+        width: 100%;
+    }
+
+    .prerow {
+        gap: 0.5cm;
+    }
+
+    .faqTable table {
+        min-width: 100%;
+        font-size: 12px;
+    }
+
+    .allFaq {
+        font-size: 16px;
+    }
+
+    .faqForm {
+        padding: 0.2cm;
+    }
+
+    .searchFaq {
+        width: 100%;
+    }
+
+    .inpSub {
+        padding: 0.2cm 0.4cm;
+    }
+}
+
+
+@media (max-width: 390px) {
+    .preOrderFaqBox {
+        padding: 0.1cm;
+    }
+
+    .preOrderFaqLeft,
+    .preOrderFaqRight-new {
+        width: 100%;
+    }
+
+    .prerow {
+        gap: 0.3cm;
+    }
+
+    .faqTable table {
+        font-size: 11px;
+        min-width: 100%;
+    }
+
+    .allFaq {
+        font-size: 14px;
+    }
+
+    .faqForm {
+        padding: 0.1cm;
+    }
+
+    .searchFaq {
+        width: 100%;
+    }
+
+    .inpSub {
+        padding: 0.2cm 0.3cm;
+        font-size: 12px;
+    }
+}
+/* .popover-content {
+    position: absolute;
+    z-index: 9999;
+    background: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+} */
+/* Input field pe click hone par line hatana */
+.color-picker-wrapper .faqInp {
+    width: 100%;
+    padding: 0.3cm;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none; /* Line hatane ke liye */
+  }
+  
+  /* Color picker ko niche dikhane ka design */
+  .color-picker-wrapper .color-picker {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+    padding: 0.2cm;
+    display: none;
+  }
+  
+  /* Input pe click karne pe color picker show */
+  .color-picker-wrapper .faqInp:focus + .color-picker {
+    display: block;
+  }
+  

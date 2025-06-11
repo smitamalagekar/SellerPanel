@@ -1,0 +1,90 @@
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+  }
+  
+  .payout-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .payout-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  
+  .payout-table th,
+  .payout-table td {
+    border-bottom: 1px solid #eee;
+    padding: 14px;
+    text-align: left;
+  }
+  
+  .payout-table th {
+    background-color: #fafafa;
+    font-weight: 600;
+  }
+  
+  .payout-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* 1400px से कम width पर यह items hide होंगे */
+  @media (max-width: 1400px) {
+    .hide-on-small {
+      display: none;
+    }
+    .toggle-col {
+      width: 50px;
+      text-align: center;
+    }
+  }
+  
+  /* 1400px से ऊपर + आइकन छिपा रहेगा */
+  @media (min-width: 1401px) {
+    .hide-on-large {
+      display: none;
+    }
+  }
+  
+  /* Toggle Button */
+  .toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Expanded Row */
+  .expanded-row {
+    background-color: #f9f9f9;
+    text-align: left;
+    padding: 10px;
+  }
+  
+  /* Inner Table (Expanded Data के लिए) */
+  .inner-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .inner-table td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+  }
+  
+  .inner-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  

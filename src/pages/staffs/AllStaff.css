@@ -1,0 +1,117 @@
+.all-staffs-container {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .add-new-staffs-button {
+    background-color: rgb(143, 96, 238);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 21px;
+    cursor: pointer;
+    float: right;
+    margin-bottom: 50px !important;
+  }
+  
+  .staffs-table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+  
+  .staffs-table th,
+  .staffs-table td {
+    padding: 20px;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+  .staffs-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .options-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .responsive-expand-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    display: none; /* Hide on larger screens */
+  }
+  
+  .edit-icon,
+  .delete-icon {
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  .expanded-row {
+    background-color: #f9f9f9;
+  }
+  
+  .expanded-details {
+    padding: 10px;
+  }
+  
+  @media (max-width: 1400px) {
+    .hide-on-responsive {
+      display: none;
+    }
+    .responsive-expand-button {
+      display: block; /* Show on smaller screens */
+    }
+  }
+  .edit-icon {
+    color: #007bff; /* Blue color for Edit */
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+
+}
+/* 
+.edit-icon:hover {
+    background-color: #007bff;
+    color: #000; 
+  
+} */
+
+.delete-icon {
+    color: #dc3545; /* Red color for Delete */
+    font-size: 16px;
+    cursor: pointer;
+    transition: color 0.3s;
+    margin-left: 9px;
+}
+
+/* .delete-icon:hover {
+    color: #fff;
+   
+} */ 
+
+.expanded-table {
+    width: 100%;
+    /* border-collapse: collapse; */
+    margin-top: 0px;
+  }
+  
+  .expanded-table th,
+  .expanded-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .expanded-table th {
+    /* background-color: #f2f2f2; */
+    width: 30%;
+  }
+  .staff {
+ font-size: 27px !important;
+ margin-left: 20px;
+  }
+  

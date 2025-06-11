@@ -1,0 +1,117 @@
+.staff-form-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.staffbox {
+    background-color: #fff;
+    padding: 40px;
+    width: 100%;
+    max-width: 700px;  /* Desktop पर max-width सेट */
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.staffbox h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.staff-form {
+    width: 100%;
+}
+
+/* Input fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 15px; 
+    height: 45px;  
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px; 
+    transition: all 0.3s ease-in-out;
+}
+
+option:hover{
+background-color: #2980b9;
+}
+
+/* Input focus effect */
+input:focus,
+select:focus {
+    border-color: #3498db;
+}
+
+/* Save button */
+.save-button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* width: 100%;   */
+    font-size: 16px;
+    
+    transition: background 0.3s;
+}
+.save-btn1{
+    text-align: right;
+}
+.save-button:hover {
+    background-color: #2980b9;
+}
+
+/* 📱 Mobile (स्मॉल स्क्रीन) */
+@media (max-width: 768px) {
+    .staffbox {
+        padding: 20px;
+        max-width: 90%; /* स्क्रीन के हिसाब से 90% width */
+    }
+
+    input, select {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .save-button {
+        padding: 10px;
+    }
+}
+
+/* 📱 Extra Small Screens (मोबाइल 480px से छोटे) */
+@media (max-width: 480px) {
+    .staffbox {
+        padding: 15px;
+        max-width: 95%;
+    }
+
+    .staffbox h2 {
+        font-size: 18px;
+    }
+
+    input, select {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .save-button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

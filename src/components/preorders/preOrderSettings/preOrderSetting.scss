@@ -1,0 +1,246 @@
+.PreOrderSetting {
+    padding: 1cm;
+    // border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1cm;
+}
+
+.preOrderSettingBox {
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 5px;
+    width: fit-content;
+
+}
+.preOrderBoxHead {
+    padding: .3cm .5cm;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.preOrderBoxHeadText {
+    font-weight: 600;
+    opacity: .8;
+}
+
+.preOrderBoxLower {
+    padding: .5cm;
+}
+
+.productBoxLowerdiv {
+    display: flex;
+    gap: 2cm;
+    align-items: center;
+}
+
+.preOrderBoxLower {
+    display: flex;
+    flex-direction: column;
+    gap: .3cm;
+}
+
+.productBoxLowerText {
+    font-size: 14px;
+    width: 6cm;
+    // border: 1px solid black;
+}
+
+.PreProductInputDiv {
+    display: flex;
+    width: 13cm;
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 5px;
+}
+
+.percentDiscount {
+    padding: .2cm .5cm;
+    // font-size: 18px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: rgb(223, 223, 223);
+}
+
+.dicountInp {
+    padding: .2cm;
+    // border: 1px solid black;
+    border-radius: 5px 0px 0px 5px;
+    background-color: transparent;
+    width: 100%;
+}
+
+.updateButtonBox {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: .3cm;
+
+}
+
+.updatePreOrderSetting {
+    padding: .2cm 2cm;
+    background-color: rgb(41, 182, 41);
+    color: white;
+    border-radius: 5px;
+
+}
+.file-label {
+    background-color: rgb(223, 223, 223);
+    padding: .2cm .5cm;
+    color: #4b5563;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.file-input {
+    display: none;
+    /* Hide the default file input */
+}
+
+.file-name {
+    padding: .2cm .5cm;
+    font-size: 14px;
+    color: #6b7280;
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.rateInput {
+    padding: .2cm;
+    width: 100%;
+    background-color: transparent;
+}
+
+.editor-container {
+    border: 1px solid rgb(223, 223, 223);
+    border-radius: 5px;
+    min-height: 200px;
+    padding: .2cm;
+    width: 15cm;
+    background-color: transparent;
+}
+
+.editorBox {
+    align-items: flex-start;
+}
+
+.qrcode {
+    width: 4cm;
+    position: relative;
+    margin-top: .3cm;
+}
+
+.qrcodeimg {
+    width: 100%;
+}
+
+.crossImg {
+    position: absolute;
+    background-color: rgb(204, 204, 255);
+    width: fit-content;
+    padding: .2cm;
+    border-radius: 50%;
+    top: -.3cm;
+    right: -0.35cm;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .PreOrderSetting {
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .preOrderSettingBox {
+        width: 100%;
+    }
+
+    .productBoxLowerdiv {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .productBoxLowerText {
+        width: 100%;
+    }
+
+    .PreProductInputDiv {
+        width: 100%;
+    }
+
+    .editor-container {
+        width: 100%;
+        min-height: 150px;
+    }
+
+    .updateButtonBox {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .updatePreOrderSetting {
+        width: 100%;
+        text-align: center;
+    }
+
+    .qrcode {
+        width: 100%;
+        max-width: 120px;
+        margin: 10px auto;
+    }
+
+    .crossImg {
+        top: -5px;
+        right: -5px;
+        padding: 5px;
+    }
+}
+.skeleton {
+    position: relative;
+    overflow: hidden;
+    background: #f0f0f0;
+    border-radius: 12px;
+    margin-top: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.skeleton::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150px;
+    height: 100%;
+    width: 150px;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+    animation: loading 1.2s infinite;
+}
+
+@keyframes loading {
+    0% {
+        left: -150px;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.fancy-textarea {
+    height: 100px;
+    width: 100%;
+}
+
+.fancy-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 16px;
+}
+
+.fancy-button {
+    width: 160px;
+    height: 42px;
+    border-radius: 8px;
+    margin-top: 16px;
+}

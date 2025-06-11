@@ -1,0 +1,167 @@
+/* Main Container */
+.warranty-container {
+    width: calc(100% - 40px);
+    /* max-width: 600px; */
+    margin: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Titles */
+  .section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .sub-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  /* grey Divider */
+  .divider {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+  }
+  
+  /* Warranty row */
+  .config-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+  }
+  
+  /* Label */
+  .option-label {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  /* Toggle Switch on-off*/
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
+  
+  .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #28a745;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(18px);
+  }
+  
+  /* Warranty dropdown */
+  .warranty-dropdown {
+    margin-top: 10px;
+  }
+  
+  .dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background: white;
+    cursor: pointer;
+  }
+  
+  /* Warranty description */
+  .warranty-note {
+    background: #f8f9fa;
+    padding: 12px;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .add-note-btn {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+  }
+  
+/* button */
+  .button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .btn-btn-unpublish {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+  }
+  
+  .btn-btn-publish {
+    background: #28a745;
+    color: white;
+    border: none;
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .config-option {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .button-group {
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  

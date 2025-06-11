@@ -1,0 +1,261 @@
+/* .ma10 {
+    margin-top: 1cm;
+}
+
+.preOrderFaqLeft {
+    padding: .5cm;
+   
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.preOrderLeftUpper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0cm 0cm .5cm 0cm;
+
+}
+
+.allFaq {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.searchFaq {
+    background-color: transparent;
+    padding: .15cm .3cm;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 5px;
+}
+
+.preOrderFaqRight {
+    width: 20cm;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+}
+
+.preOrderFaqBox {
+    display: flex;
+    align-items: flex-start;
+
+    gap: .3cm;
+  
+    padding: .5cm;
+}
+
+.preOrderFaqRightHead {
+    padding: .5cm;
+    border-bottom: 1px solid rgb(206, 206, 206);
+}
+
+.faqForm {
+    display: flex;
+    flex-direction: column;
+    gap: .3cm;
+    padding: .5cm;
+}
+
+.faqInp,
+.faqTxt {
+    padding: .3cm;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+.faqTxt {
+    min-height: 4cm;
+}
+
+.inpSub{
+    background-color: royalblue;
+    color: white;
+    padding: .2cm .5cm;
+    border-radius: 5px;
+    cursor: pointer;
+    justify-content: flex-end;
+}
+
+.inpSubBox {
+    display: flex;
+    margin-top: .2cm;
+    justify-content: flex-end;
+   
+}
+
+.faqTable {
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 10px;
+} */
+
+
+
+/* ✅ Main Box Flex Fix */
+.preOrderFaqBox {
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 0.3cm;
+    padding: 0.5cm;
+}
+
+/* ✅ Left Section */
+.preOrderFaqLeft {
+    flex: 2; /* Left section ko 2 parts dena */
+    min-width: 50%;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    padding: 0.5cm;
+    box-sizing: border-box;
+}
+
+/* ✅ Right Section */
+.preOrderFaqRight {
+    flex: 1; /* Right section ko 1 part dena */
+    min-width: 50%;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 5px;
+    padding: 0.5cm;
+    box-sizing: border-box;
+}
+
+/* ✅ Upper Section */
+.preOrderLeftUpper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.3cm;
+}
+
+/* ✅ Search Box */
+.searchFaq {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* ✅ Form & Inputs */
+.faqForm {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3cm;
+    padding: 0.5cm;
+}
+
+/* ✅ Form Input Width */
+.faqInp, .faqTxt {
+    width: 100%;
+    padding: 0.3cm;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+/* ✅ Submit Button */
+.inpSubBox {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 0.2cm;
+}
+
+/* ✅ Full Width Button on Mobile */
+.inpSub {
+    width: 100%;
+    background-color: royalblue;
+    color: white;
+    padding: 0.2cm 0.5cm;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ✅ Table Fix */
+.faqTable {
+    width: 100%;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 10px;
+    overflow-x: auto; /* 🎯 For Small Screens */
+}
+
+/* ✅ Logo and Actions */
+.actions {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* 📱✅ Final Media Queries */
+
+/* ✅ Tablets and Medium Screens */
+@media (max-width: 1024px) {
+    .preOrderFaqBox {
+        flex-wrap: wrap;
+    }
+
+    .preOrderFaqLeft,
+    .preOrderFaqRight {
+        width: 100%;
+    }
+}
+
+/* ✅ Small Devices (768px and below) */
+@media (max-width: 768px) {
+    .preOrderFaqBox {
+        flex-direction: column; /* 🎯 Stacked layout for small screens */
+    }
+
+    .preOrderFaqLeft,
+    .preOrderFaqRight {
+        width: 100%;
+    }
+}
+
+/* ✅ Extra Small Devices (480px and below) */
+@media (max-width: 480px) {
+    .faqForm {
+        padding: 0.2cm;
+        gap: 0.2cm;
+    }
+
+    .faqInp,
+    .faqTxt,
+    .inpSub {
+        width: 100%;
+    }
+
+    .inpSubBox {
+        justify-content: center;
+    }
+
+    th,
+    td {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+
+/* ✅ 390px and Smaller Screens */
+@media (max-width: 390px) {
+    .allFaq {
+        font-size: 16px;
+    }
+
+    th,
+    td {
+        font-size: 11px;
+        padding: 4px;
+    }
+
+    .faqForm {
+        padding: 0.2cm;
+        gap: 0.2cm;
+    }
+
+    .faqInp,
+    .faqTxt {
+        width: 100%;
+    }
+
+    .inpSub {
+        width: 100%;
+    }
+}
